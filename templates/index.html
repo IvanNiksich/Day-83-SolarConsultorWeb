@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Solar_Consulting{% endblock %}
+
+{% block content %}
+
+<div>
+<!-- Sections -->
+    <section id="section1" class="p-5 text-center bg-body-tertiary"
+         style="background-image: url('static/paneles.png'); background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden;">
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6 rounded" style="background-color: white">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Energía Solar</h1>
+                        <p class="lead" style="color: white; text-shadow:
+                            -1px -1px 0 black,
+                            1px -1px 0 black,
+                            -1px 1px 0 black,
+                            1px 1px 0 black;">
+                            Te asesoramos sobre la última tecnología en generación de energía solar, para que el proyecto que vos imaginas se convierta en realidad.
+                        </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="btn btn-primary btn-lg px-4 me-md-2" href="#section2" role="button">Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="section2" class="p-5 text-center bg-body-tertiary" style="background-image: url('static/solar_inverter_2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden;">
+    <h1>Section 2</h1>
+    <p>Content of Section 2 goes here...</p>
+</section>
+
+<section id="section3" class="bg-dark text-white">
+    <h1>Section 3</h1>
+    <p>Content of Section 3 goes here...</p>
+</section>
+</div>
+
+{% endblock %}
