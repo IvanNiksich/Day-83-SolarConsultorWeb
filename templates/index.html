@@ -3,135 +3,49 @@
 
 {% block content %}
 
-<div>
-<!-- Sections -->
-    <section id="section1" class="p-5 text-center bg-body-tertiary"
-         style="background-image: url('static/paneles.png'); background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden;">
+{% include "header.html" %}
 
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-          </div>
-
-          <div class="col">
-
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-2 mt-2 mb-4 display-6 lh-1 fw-bold">Energía Solar</h3>
-                  <p>Te asesoramos sobre la última tecnología en generación de energía solar, para que el proyecto que vos imaginas se convierta en realidad.</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </section>
-
-<section id="section2" class="p-5 text-center bg-body-tertiary" style="background-image: url('static/solar_inverter_2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden;">
-
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-0 mt-0 mb-4 lh-1 fw-bold">No todas las soluciones Solares son iguales:</h3>
-              <p>Si lo que buscas es disminuir tu tarifa de luz mientras ayudas al planeta, no vas a necesitar la misma capacidad de baterias que alguien que sufre muchos cortes de luz en verano y busca una alternativa mas economica y sustentable al uso de un generador electrico.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-0 mt-0 mb-4 lh-1 fw-bold">Tu sistema de generacion Solar a medida:</h3>
-              <p>A traves de entrevistas analizamos tus necesidades y dimensionamos un sistema de generacion solar que se adapte a vos.</p>
-              <p>Para que cumpla con tus necesidades y espectativas, buscando que el retorno de tu inversion sea optimo.</p>
-          </div>
-        </div>
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" >
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Solar Energy </h1>
+      <h3 class="fw-normal mb-3" style="color: rgb(157, 192, 139);">Te asesoramos sobre la última tecnología en generación de energía solar, para que el proyecto que vos imaginas se convierta en realidad.</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
       </div>
     </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
 
-</section>
-
-<section id="section3" class="bg-dark text-white pt-4 mt-4">
-  <h3 class="pt-0 mt-0 mb-4 lh-1 fw-bold">Primera etapa:</h3>
-  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 pt-0 mt-0">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <p><b>Analizamos tu consumo electrico, donde estas ubicado y que esperas del sistema de generacion Solar.</b></p>
-              <p><b> Necesitas un sistema Off grid? Con conexion a la red para disminuir la tarifa de luz? Queres reemplazar un generador en los cortes de luz?</b></p>
-              <p><b></b></p>
-          </div>
-        </div>
+  <div class="row justify-content-center w-100 my-md-3 ps-md-3">
+    <div class="col-md-6 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Paneles solares:</h2>
+        <p class="lead">No necesitas la misma cantidad de paneles para generar la misma energia en Chubut, que en Salta o que en Buenos Aires. Si los vas a montar sobre un techo, vana estar correctamente orientados? El angulo de inclinacion tambien es fundamental para el rendimiento.</p>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <p><b>Hablamos sobre las distintas opciones de componentes del sistema, para que puedas elegir entre las distintas tecnologias entendiendo los beneficios y las contras de cada uno.</b></p>
-            <p><b>Cuantos paneles solares y de que potencia? Baterias AMG, de Gel o de Litio? Que controlador de cargas e inversor?</b></p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <p><b>Al finalizar esta etapa vas a tener los requerimientos del sistema de generacion Solar que se adapta a tus necesidades.</b></p>
-              <p><b>Vamos a mostrarte un sistema completo a modo de ejemplo, con un analisis de costos y beneficios economicos.</b></p>
-              <p><b>Con esta informacion vas a poder decidir si un sistema de generacion solar, es una buena solucion para tus necesidades y si tu presupuesto actual es acorde al tamaño del sistema que queres.</b></p>
-          </div>
-        </div>
-      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url('static/paneles.png'); background-size: cover; background-position: center;"></div>
     </div>
 
-
-</section>
-
-<section id="section4" class="bg-dark text-white pt-4 mt-4">
-  <h3 class="pt-0 mt-0 mb-4 lh-1 fw-bold">Segunda etapa:</h3>
-  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 pt-0 mt-0">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <p><b>Definimos cada uno de los componentes que son parte del sistema de generacion Solar, de acuerdo a los requerimientos que encontramos en la etapa 1.</b></p>
-              <p><b>Hablamos sobre los proveedores de los componentes del sistema y definimos cuales vamos a considerar en este proyecto.</b></p>
-              <p><b>Definimos uno por uno los modelos que mejor se adaptan a los requerimientos del sitema</b></p>
-          </div>
-        </div>
+    <div class="col-md-6 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Bancos de batería:</h2>
+        <p class="lead">La capacidad que necesitas no es la misma si buscas disminuir tu factura de luz, que si querés reemplazar un generador durante cortes de luz. Tampoco si usas baterias de Litio en lugar de AGM o Gel. Ademas, distintos tipos de bateria van a tener expectativas de vida distintas.</p>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <p><b>Te presentamos un posible sistema de generacion con los costos y los valores de generacion de energia esperados.</b></p>
-            <p><b>Si consideramos que la situacion lo amerita, te presentamos una segunda opcion que nos parecezca interesante que tengas en cuenta.</b></p>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-color: rgb(96, 153, 102); color: white;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <p><b>Al finalizar esta etapa vamos a tener el sistema de generacion Solar definido, con todos sus elementos principales elegidos, con una estimacion del costo y los niveles de generacion de energia esperados.</b></p>
-              <p><b>Con esta informacion vas a poder decidir si hay elementos del sistema que quieras modificar y si tu presupuesto actual es acorde al tamaño del sistema que queres.</b></p>
-          </div>
-        </div>
-      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url('static/solar_inverter_2.jpg'); background-size: cover; background-position: center;"></div>
     </div>
+  </div>
 
+</main>
 
-</section>
+<h6 style="color: rgb(96, 153, 102);">HOLA MUNDO</h6>
 
-</div>
 
 {% endblock %}

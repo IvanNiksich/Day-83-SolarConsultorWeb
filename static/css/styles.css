@@ -2,24 +2,36 @@
 your web pages for the styles to be rendered. */
 
 body {
-background-color: #333;
+background-color: rgb(64, 81, 59);
 color: white;
 }
 
-a {
-    color: #ffc107;
-}
-
-.jumbotron {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  height: 100vh;
-  color: white;
-  background-color: #333;
-}
 
 .space-above {
     margin-top: 0px;
     padding-top: 0px;
 }
+
+/* Define the default color for the navigation links */
+  .nav-item a {
+    color: rgb(237, 241, 214); /* Default color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Define the color when the user hovers over the navigation item */
+  .nav-item a:hover {
+    color: rgb(157, 192, 139); /* Hover color */
+  }
+
+  /* Define the color when the navigation item is active */
+  .nav-item a:active {
+    color: red; /* Active color */
+ }
+
+ h1 {
+    color: rgb(237, 241, 214);
+ }
+
+ h3 {
+    color: rgb(237, 241, 214);
+ }
