@@ -11,9 +11,9 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/bye')
-def bye_world():
-    return 'Bye, world.'
+@app.route('/service')
+def service():
+    return render_template('/service.html')
 
 
 if __name__ == "__main__":

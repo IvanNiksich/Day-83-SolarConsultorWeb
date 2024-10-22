@@ -6,17 +6,18 @@
 {% include "header.html" %}
 
 <main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" >
+  <section id="home_section">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" >
     <div class="col-md-6 p-lg-5 mx-auto my-5">
       <h1 class="display-3 fw-bold">Solar Energy </h1>
       <h3 class="fw-normal mb-3" style="color: rgb(157, 192, 139);">Te asesoramos sobre la última tecnología en generación de energía solar, para que el proyecto que vos imaginas se convierta en realidad.</h3>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link" href="#" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
-          Learn more
+        <a class="icon-link" href="#offer_section" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
+          Conoce más
           <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
         </a>
-        <a class="icon-link" href="#" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
-          Buy
+        <a class="icon-link" href="{{ url_for('service') }}" style="color: rgb(157, 192, 139); text-decoration-color: rgb(157, 192, 139);">
+          Asesorate
           <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
         </a>
       </div>
@@ -24,8 +25,10 @@
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
+  </section>
 
-  <div class="row justify-content-center w-100 my-md-3 ps-md-3">
+  <section id="reasons_section">
+    <div class="row justify-content-center w-100 my-md-3 ps-md-3">
     <div class="col-md-6 text-center overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Paneles solares:</h2>
@@ -43,8 +46,7 @@
     </div>
   </div>
 
-
-  <div class="row justify-content-center w-100 my-md-3 ps-md-3">
+    <div class="row justify-content-center w-100 my-md-3 ps-md-3">
     <div class="col-md-6 text-center overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Off-Grid:</h2>
@@ -55,12 +57,26 @@
 
     <div class="col-md-6 text-center overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">Bancos de batería:</h2>
-        <p class="lead">La capacidad que necesitas no es la misma si buscas disminuir tu factura de luz, que si querés reemplazar un generador durante cortes de luz. Tampoco si usas baterias de Litio en lugar de AGM o Gel. Ademas, distintos tipos de bateria van a tener expectativas de vida distintas.</p>
+        <h2 class="display-5">Controlador de carga e Inversor:</h2>
+        <p class="lead">El tipo de controlador va a depender del sistema que necesites, no solo la potencia que puede manejar sino tambien si va a tener una conexion de red, una entrada para generador, 1 o 2 entradas para arrays de paneles. Tambien va a definir las tensiones de los paneles y del banco de baterias, la potencia maxima de los paneles y el copnsumo maximo de las cargas.</p>
       </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url('static/baterias.png'); background-size: cover; background-position: center;"></div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url('static/solar_inverter_2.jpg'); background-size: cover; background-position: center;"></div>
     </div>
   </div>
+  </section>
+
+  <section id="offer_section">
+  <div class="px-4 py-5 my-5 text-center">
+
+    <h1 class="display-5 fw-bold">Asesorate con nostros:</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">No malgastes dinero en sistemas que no van a funcionar como vos necesitas por no estar diseñados a medida para vos. Por las razones que te mostramos es muy importante que todos los elementos del sistema esten dimensionados de acuerdo a lo que vos necesitas y a donde estas ubicado. Por eso cada proyecto es unico, demandando mucho tiempo de diseño y evaluacion de opciones para conseguir la solucion optima. Muchos vendedores e instaladores no pueden dedicarle el tiempo necesario a esta etapa del proyecto por razones de costos, esto resulta en instalaciones de energia solar que no terminan de cumplir con lo que el cliente necesita o que despues de unos años empiezan a tener problemas con el banco de baterias.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-lg px-4 gap-3" style="background-color: rgb(96, 153, 102); color: rgb(237, 241, 214);" onclick="window.location.href='{{ url_for('service') }}';">Conocer más</button>
+      </div>
+    </div>
+  </div>
+  </section>
 
 </main>
 
