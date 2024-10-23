@@ -4,6 +4,37 @@
 {% block content %}
 
 {% include "header.html" %}
+<div>
+    <main>
+  <div class="container px-4 py-5" id="featured-3">
+    <h1 class="pb-2">Proyectos de Energía Solar:</h1>
+    <h3 class="fw-normal mb-3 pb-2 border-bottom" style="color: rgb(157, 192, 139);">Nuestro servicio de asesoramiento consta de 3 etapas. A lo largo de las cuales vamos a definir caracteristicas fundamentales del sistema que vos necesitas.</h3>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h3 class="fs-2">Primer etapa:</h3>
+        <p class="lead">Durante esta etapa las preguntas que vamos a contestar junto a vos, es si un sistema de generacion de energía solar puede ser una buena solucion para tus necesidades y si el presupuesto que tenes asignado para este sistema es suficiente para que el mismo cumpla con tus necesidades y expectativas.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2">Segunda etapa:</h3>
+        <p class="lead">En esta etapa vamos a dimensionar tu sistema, estimar la energia que va a generar y elegir entre distintas opciones, teniendo en cuenta distintas tecnologias y de acuerdo a los elementos disponibles en los proveedores que consideremos para el projecto.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2">Tercer etapa:</h3>
+        <p class="lead">En la ultima etapa desarrollamos y te entregamos la documentacion del proyecto, para que puedas comparar con lo que te presente tu instalador y controlar a lo largo de la instalacion que todos los detalles importantes esten correctos.</p>
+      </div>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-lg px-4 gap-3" style="background-color: rgb(96, 153, 102); color: rgb(237, 241, 214);" onclick="window.location.href='{{ url_for('prices') }}';">Precios</button>
+      </div>
+  </div>
+
+
+</main>
+
+</div>
+
+
 
 <h6 style="color: rgb(96, 153, 102);">Service</h6>
 

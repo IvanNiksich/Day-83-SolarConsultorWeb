@@ -16,6 +16,11 @@ def service():
     return render_template('/service.html')
 
 
+@app.route('/prices')
+def prices():
+    return render_template('/prices.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 

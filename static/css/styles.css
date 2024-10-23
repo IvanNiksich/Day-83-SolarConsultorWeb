@@ -40,6 +40,18 @@ color: white;
     color: rgb(237, 241, 214);
  }
 
+ h4 {
+    color: rgb(237, 241, 214);
+ }
+
   p {
     color: rgb(237, 241, 214);
  }
+
+ .card-header {
+    background-color: #609966; /* Change to your desired color */
+}
+
+.card-body {
+    background-color: #9DC08B; /* Change to your preferred color */
+}
