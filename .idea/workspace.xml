@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc73dd70-32d7-4136-8b59-4e8d702af00e" name="Changes" comment="Services done. Added prices. Mod header.">
-      <change afterPath="$PROJECT_DIR$/static/envelope-at-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/envelope-at.svg" afterDir="false" />
+    <list default="true" id="dc73dd70-32d7-4136-8b59-4e8d702af00e" name="Changes" comment="Work on footer.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Ivan/PycharmProjects/Day-83-SolarConsultorWeb/static"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ivan/PycharmProjects/Day-83-SolarConsultorWeb/static&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ivan\PycharmProjects\Day-83-SolarConsultorWeb\static" />
@@ -143,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729704062764</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Work on footer.">
+      <option name="closed" value="true" />
+      <created>1729810029981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729810029981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +167,10 @@
     <MESSAGE value="Added sections to index." />
     <MESSAGE value="Implement color pallet. Work on index." />
     <MESSAGE value="Services done. Added prices. Mod header." />
-    <option name="LAST_COMMIT_MESSAGE" value="Services done. Added prices. Mod header." />
+    <MESSAGE value="Index structure done, added service.html, work on header." />
+    <MESSAGE value="Prices done, added contact and footer, plus icons." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;templates/footer.html" />
+    <MESSAGE value="Work on footer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on footer." />
   </component>
 </project>
