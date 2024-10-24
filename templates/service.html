@@ -13,7 +13,7 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <h3 class="fs-2">Primer etapa:</h3>
-        <p class="lead">Durante esta etapa las preguntas que vamos a contestar junto a vos, es si un sistema de generacion de energía solar puede ser una buena solucion para tus necesidades y si el presupuesto que tenes asignado para este sistema es suficiente para que el mismo cumpla con tus necesidades y expectativas.</p>
+        <p class="lead">Durante esta etapa las preguntas que vamos a contestar junto a vos son, si un sistema de generacion de energía solar puede ser una buena solucion para tus necesidades y si el presupuesto que tenes asignado para este sistema es suficiente para que el mismo cumpla con tus necesidades y expectativas.</p>
       </div>
       <div class="feature col">
         <h3 class="fs-2">Segunda etapa:</h3>
@@ -26,7 +26,7 @@
     </div>
     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-lg px-4 gap-3" style="background-color: rgb(96, 153, 102); color: rgb(237, 241, 214);" onclick="window.location.href='{{ url_for('prices') }}';">Precios</button>
-      </div>
+    </div>
   </div>
 
 
@@ -34,9 +34,5 @@
 
 </div>
 
-
-
-<h6 style="color: rgb(96, 153, 102);">Service</h6>
-
-
+{% include "footer.html" %}
 {% endblock %}
