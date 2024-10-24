@@ -14,45 +14,44 @@
             <h4 class="my-0 fw-normal">Primer etapa</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">$100<small class="text-body-secondary fw-light"> USD</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Analisis de consumo</li>
+              <li>Recurso solar en tu ubicacion</li>
+              <li>Especificacion de tus necesidades</li>
+              <li>Presentacion de projecto de ejemplo</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
+          <div class="card-header py-3 border-primary">
+            <h4 class="my-0 fw-normal">Segunda etapa</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">$150<small class="text-body-secondary fw-light"> USD</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Dimensionado del sistema</li>
+              <li>Eleccion de componentes y tecnologias</li>
+              <li>Presentacion de proyecto diseñado</li>
+              <li>Eleccion de opciones y modificaciones</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
+          <div class="card-header py-3 border-primary">
+            <h4 class="my-0 fw-normal">Tercer etapa</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">$150<small class="text-body-secondary fw-light"> USD</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Desarrollo de documentacion</li>
+              <li>Lista de elementos</li>
+              <li>Diagrama de conexion del sistema</li>
+              <li>Presentacion de la documentacion</li>
             </ul>
           </div>
         </div>
@@ -61,7 +60,11 @@
 
   </main>
 
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <button type="button" class="btn btn-lg px-4 gap-3" style="background-color: rgb(96, 153, 102); color: rgb(237, 241, 214);" onclick="window.location.href='{{ url_for('contact') }}';">Contacto</button>
+  </div>
+
 </div>
 
-
+{% include "footer.html" %}
 {% endblock %}

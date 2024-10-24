@@ -55,3 +55,16 @@ color: white;
 .card-body {
     background-color: #9DC08B; /* Change to your preferred color */
 }
+
+/* custom.css */
+.text-primary {
+  color: #EDF1D6 !important; /* Tomato color */
+}
+
+
+.bg-primary {
+  background-color: #40513B !important;
+}
+.border-primary {
+  border-color: #40513B !important;
+}
