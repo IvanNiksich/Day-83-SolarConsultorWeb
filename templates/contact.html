@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
+{% from "bootstrap5/form.html" import render_form %}
 {% block title %}Solar_Consulting{% endblock %}
 
 {% block content %}
 
 {% include "header.html" %}
+
+
+
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+{{ body.text|safe }}
+
+{{ render_form(form, novalidate=True, button_map={"submit": "primary"})  }}
 
 <h1>HOLA MUNDO</h1>
 
