@@ -10,9 +10,16 @@
 
 {{ ckeditor.load() }}
 {{ ckeditor.config(name='body') }}
-{{ body.text|safe }}
 
-{{ render_form(form, novalidate=True, button_map={"submit": "primary"})  }}
+<div class="position-relative overflow-hidden p-3 p-md-2 m-md-3 text-right" >
+    <div class="col-md-6 p-lg-5 mx-auto my-0">
+        {{ render_form(form, novalidate=True, button_map={"submit": "secondary"})  }}
+    </div>
+</div>
+
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div
 
 <h1>HOLA MUNDO</h1>
 

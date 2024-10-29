@@ -5,10 +5,13 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditor, CKEditorField
 import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
+from bs4 import BeautifulSoup
 
 
 SENDER_MAIL = "niksich.ivan@yahoo.com"
-DESTINATION_MAIL = "niksich.ivan@gmail.com"
+RECIPIENT_MAIL = "niksich.ivan@gmail.com"
 SUBJECT_MAIL = "Consulta de formulario Solar Energy"
 
 
@@ -22,7 +25,7 @@ class ContactForm(FlaskForm):
 def send_mail(subject, mail_body, sender, recipient):
     with smtplib.SMTP("smtp.mail.yahoo.com", 587) as connection:
         connection.starttls()
-        connection.login(user=sender, password="xsmpjkmivdeynaee")
+        connection.login(user=sender, password="kcabeheuoqnejpaa")
         connection.sendmail(from_addr=sender, to_addrs=recipient, msg=f"Subject: {subject}\n\n{mail_body}")
         connection.close()
         print("Mail sent.")
@@ -32,6 +35,7 @@ def send_mail(subject, mail_body, sender, recipient):
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 Bootstrap5(app)
+ckeditor = CKEditor(app)
 
 
 @app.route("/")  # defines the route of the page that runs de function below.
@@ -57,12 +61,17 @@ def contact():
             client_name = form.name.data
             client_mail = form.email.data
             client_message = form.body.data
+            soup = BeautifulSoup(client_message, 'html.parser')
+            client_message = soup.get_text()
 
             body = f"Nombre: {client_name}.\nEmail: {client_mail}.\nConsulta: {client_message}."
+            # print(body)
+
+            send_mail(subject="This is a test:", mail_body="Hello. Testing.", sender=SENDER_MAIL, recipient=RECIPIENT_MAIL)
 
             return redirect(url_for("home"))
 
-    return render_template('/contact.html')
+    return render_template('/contact.html', form=form)
 
 
 if __name__ == "__main__":
